@@ -37,4 +37,4 @@ O objetivo deste exercício é colocar em prática o uso dos seguintes component
 - As telas de detalhes são livres (não tem nenhum layout a ser seguido)
 
 # Layout
-![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)
+![N|Solid](https://raw.githubusercontent.com/ccezar/exercicio_ios/master/Layout.png)
