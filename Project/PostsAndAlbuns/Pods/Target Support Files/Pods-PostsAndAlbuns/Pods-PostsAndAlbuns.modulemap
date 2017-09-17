@@ -1,0 +1,6 @@
+framework module Pods_PostsAndAlbuns {
+  umbrella header "Pods-PostsAndAlbuns-umbrella.h"
+
+  export *
+  module * { export * }
+}
