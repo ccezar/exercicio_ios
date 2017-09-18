@@ -20,6 +20,11 @@
 		FCFC49501F6ECE2000F149CF /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC494F1F6ECE2000F149CF /* Company.swift */; };
 		FCFC49521F6ECF0000F149CF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC49511F6ECF0000F149CF /* Photo.swift */; };
 		FCFC49551F6ECF7600F149CF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC49541F6ECF7600F149CF /* Album.swift */; };
+		FCFC49571F6EDA4F00F149CF /* PostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC49561F6EDA4F00F149CF /* PostsInteractor.swift */; };
+		FCFC49591F6EDCFE00F149CF /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC49581F6EDCFE00F149CF /* PostsPresenter.swift */; };
+		FCFC495D1F6EDEDE00F149CF /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC495C1F6EDEDE00F149CF /* PostsRouter.swift */; };
+		FCFC495F1F6EDF3700F149CF /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC495E1F6EDF3700F149CF /* BasePresenter.swift */; };
+		FCFC49631F6EE06900F149CF /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC49621F6EE06900F149CF /* PostsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		FCFC494F1F6ECE2000F149CF /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		FCFC49511F6ECF0000F149CF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		FCFC49541F6ECF7600F149CF /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		FCFC49561F6EDA4F00F149CF /* PostsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsInteractor.swift; sourceTree = "<group>"; };
+		FCFC49581F6EDCFE00F149CF /* PostsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		FCFC495C1F6EDEDE00F149CF /* PostsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		FCFC495E1F6EDF3700F149CF /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		FCFC49621F6EE06900F149CF /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,31 +102,33 @@
 		FCFC492F1F6ECB5200F149CF /* PostsAndAlbuns */ = {
 			isa = PBXGroup;
 			children = (
-				FCFC49421F6ECBFD00F149CF /* View */,
+				FCFC49421F6ECBFD00F149CF /* ViewControllers */,
 				FCFC49431F6ECC2200F149CF /* Interactor */,
 				FCFC49441F6ECC3800F149CF /* Presenter */,
 				FCFC49461F6ECC4F00F149CF /* Entity */,
-				FCFC49451F6ECC4C00F149CF /* Routing */,
+				FCFC49451F6ECC4C00F149CF /* Router */,
 				FCFC49301F6ECB5200F149CF /* AppDelegate.swift */,
 				FCFC49321F6ECB5200F149CF /* ViewController.swift */,
 				FCFC49371F6ECB5200F149CF /* Assets.xcassets */,
+				FCFC49341F6ECB5200F149CF /* Main.storyboard */,
+				FCFC49391F6ECB5200F149CF /* LaunchScreen.storyboard */,
 				FCFC493C1F6ECB5200F149CF /* Info.plist */,
 			);
 			path = PostsAndAlbuns;
 			sourceTree = "<group>";
 		};
-		FCFC49421F6ECBFD00F149CF /* View */ = {
+		FCFC49421F6ECBFD00F149CF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FCFC49341F6ECB5200F149CF /* Main.storyboard */,
-				FCFC49391F6ECB5200F149CF /* LaunchScreen.storyboard */,
+				FCFC49621F6EE06900F149CF /* PostsViewController.swift */,
 			);
-			path = View;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		FCFC49431F6ECC2200F149CF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FCFC49561F6EDA4F00F149CF /* PostsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -124,14 +136,18 @@
 		FCFC49441F6ECC3800F149CF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FCFC49581F6EDCFE00F149CF /* PostsPresenter.swift */,
+				FCFC495E1F6EDF3700F149CF /* BasePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		FCFC49451F6ECC4C00F149CF /* Routing */ = {
+		FCFC49451F6ECC4C00F149CF /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				FCFC495C1F6EDEDE00F149CF /* PostsRouter.swift */,
 			);
+			name = Router;
 			path = Routing;
 			sourceTree = "<group>";
 		};
@@ -273,14 +289,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFC49631F6EE06900F149CF /* PostsViewController.swift in Sources */,
 				FCFC494E1F6ECDFD00F149CF /* Address.swift in Sources */,
 				FCFC49481F6ECCB800F149CF /* Post.swift in Sources */,
 				FCFC49331F6ECB5200F149CF /* ViewController.swift in Sources */,
+				FCFC49591F6EDCFE00F149CF /* PostsPresenter.swift in Sources */,
 				FCFC49311F6ECB5200F149CF /* AppDelegate.swift in Sources */,
 				FCFC49521F6ECF0000F149CF /* Photo.swift in Sources */,
+				FCFC495D1F6EDEDE00F149CF /* PostsRouter.swift in Sources */,
 				FCFC49551F6ECF7600F149CF /* Album.swift in Sources */,
+				FCFC495F1F6EDF3700F149CF /* BasePresenter.swift in Sources */,
 				FCFC49501F6ECE2000F149CF /* Company.swift in Sources */,
 				FCFC494C1F6ECDE400F149CF /* User.swift in Sources */,
+				FCFC49571F6EDA4F00F149CF /* PostsInteractor.swift in Sources */,
 				FCFC494A1F6ECD6200F149CF /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +315,6 @@
 				FCFC49351F6ECB5200F149CF /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		FCFC49391F6ECB5200F149CF /* LaunchScreen.storyboard */ = {
@@ -303,7 +323,6 @@
 				FCFC493A1F6ECB5200F149CF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
